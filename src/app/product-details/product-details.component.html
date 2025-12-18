@@ -1,0 +1,18 @@
+<div class="product">
+    <div class="product-details">
+      
+<img [src]="product.productImage" [alt]="product.productTitle" />
+      <div class="product-info">
+        <div class="name">{{product.id}}</div>
+        <div class="description">{{product.productTitle}}</div>
+        <div class="category">Part Type: {{product.productTitle}}</div>
+      </div>
+    </div>
+    <div class="price">
+      <div>{{product.productPrice}}</div>
+
+      <button class="cta" 
+            (click)="byButtonClicked(product)">Buy</button>
+            
+    </div>
+  </div>

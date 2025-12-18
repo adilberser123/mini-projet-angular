@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin: -3px -8px 0 -8px;
+    padding: 0 8px 5px 8px;
+    border-bottom: 2px solid #818285;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left * {
+    margin-right: 25px;
+  }
+  
+  .logo {
+    height: 65px;
+  }
+  
+  .cart {
+    display: flex;
+    position: relative;
+  }
+  
+  .cartCount {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    right: -15px;
+    border-radius: 25px;
+    background-color: #f590c4;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .cartCount div {
+    margin: auto;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
+  
+  .right * {
+    margin-left: 25px;
+  }
+  
+  .right img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .sign-out {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
+
+  .a {
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .active {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin: -3px -8px 0 -8px;
+    padding-bottom: 5px;
+    padding: 0 8px 5px 8px;
+    color: #444;
+    border-bottom: 2px solid #e51e1e;
+    text-decoration: none;
+  }
+
+  .a .active button {
+    padding-bottom: 5px;
+    border-bottom: 2px solid, #e51e1e;
+  }
+
+  /* Base nav button */
+.nav-btn {
+  position: relative;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #2c2c2c;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.nav-btn:hover {
+  background: rgba(99, 102, 241, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Active route (routerLinkActive) */
+.nav-btn.active {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+/* CTA button (Register / Upgrade style) */
+.nav-btn.cta {
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
+  color: white;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+}
+
+.nav-btn.cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.55);
+}
+
+/* Ghost button (Sign In) */
+.nav-btn.ghost {
+  border: 1px solid #d1d5db;
+  background: transparent;
+}
+
+.nav-btn.ghost:hover {
+  background: #f3f4f6;
+}
+
+/* Navbar spacing */
+.left a,
+.right a {
+  margin-right: 10px;
+}
